@@ -1,3 +1,50 @@
-.Nav{
-
+.Nav {
+  display: flex;
+  background-color: white;
+  padding: 10px 162px;
+  justify-content: center;
+  align-items: center;
+}
+.Content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .Logo {
+    display: flex;
+    flex-direction: row;
+    margin-right: 150px;
+  }
+  .Menu {
+    display: flex;
+    flex-direction: row;
+    margin-right: 130px;
+    --tw-text-opacity: 1;
+    color: rgb(39 76 91 / var(--tw-text-opacity));
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 1rem /* 16px */;
+    line-height: 1.5rem /* 24px */;
+    column-gap: 20px;
+  }
+  .Search {
+    display: flex;
+    flex-direction: row;
+    border-radius: 36px;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(231 229 228);
+    align-items: center;
+    padding: 0px 6px;
+    margin-right: 18px;
+  }
+  .Cart {
+    display: flex;
+    flex-direction: row;
+    border-radius: 33px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    gap: 12px;
+    padding: 0px 6px;
+  }
 }
