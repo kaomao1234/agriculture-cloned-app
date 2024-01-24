@@ -8,8 +8,9 @@ const config: Config = {
   ],
   theme: {
     fontFamily: {
-      'roboto': ['Roboto',
+      roboto: ['Roboto',
         'sans-serif'],
+      yellowtail: ['Yellowtail', 'cursive'],
     },
     colors: {
       'transparent': 'transparent',
@@ -19,7 +20,9 @@ const config: Config = {
       'black_coral_pearl': '#525C60',
       'alto': '#D4D4D4',
       'alabaster': '#F9F8F8',
-      'saltpan': '#EFF6F1'
+      'saltpan': '#EFF6F1',
+      'slate_600':"#335B6B",
+      'white': "white"
     },
     extend: {
       backgroundImage: {

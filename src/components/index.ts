@@ -1,2 +1,4 @@
-export { Footer } from "./Footer/Footer";
-export { Nav } from "./Nav/Nav";
+export { CustomGeneralButton } from "./CustomGeneralButton";
+export { ProductCard } from "./ProductCard";
+export { Footer } from "./Footer";
+export { Nav } from "./Nav";

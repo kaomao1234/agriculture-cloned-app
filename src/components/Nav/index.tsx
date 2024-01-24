@@ -1,14 +1,14 @@
 import { FC } from "react";
 import { HiMagnifyingGlass } from "react-icons/hi2";
 import { IoMdCart } from "react-icons/io";
-import style from "./Nav.module.scss";
+import style from "./main.module.scss";
 
 const Nav: FC = () => {
   return (
     <div className={style.nav}>
       <div className={style.content}>
         <div className={style.logo}>
-          <label className="text-blue_dianne font-bold font-roboto text-lg">
+          <label className="font-roboto text-lg font-bold text-blue_dianne">
             Organick
           </label>
         </div>
@@ -21,16 +21,16 @@ const Nav: FC = () => {
           <button>News</button>
         </div>
         <div className={style.search}>
-          <input className="outline-none text-black_coral_pearl bg-transparent p-2"></input>
-          <button className="text-white bg-acapulco rounded-full my-[5px] p-2">
+          <input className="bg-transparent p-2 text-black_coral_pearl outline-none"></input>
+          <button className="text-white my-[5px] rounded-full bg-acapulco p-2">
             <HiMagnifyingGlass className="size-[21px]"></HiMagnifyingGlass>
           </button>
         </div>
         <div className={style.cart}>
-          <button className="text-white bg-blue_dianne rounded-full my-[5px] p-2">
+          <button className="text-white my-[5px] rounded-full bg-blue_dianne p-2">
             <IoMdCart className="size-[21px]"></IoMdCart>
           </button>
-          <label className="text-blue_dianne font-semibold text-base font-roboto">
+          <label className="font-roboto text-base font-semibold text-blue_dianne">
             Cart(0)
           </label>
         </div>

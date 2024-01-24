@@ -1,6 +1,5 @@
 import Image from "next/image";
-import { Inter } from "next/font/google";
-import { Home } from "./Home/Home";
+import { default as Home } from "./Home";
 import { Roboto, Open_Sans } from "next/font/google";
 const roboto = Roboto({ weight: "400", subsets: ["latin"] });
 
