@@ -18,7 +18,7 @@ export const CustomGeneralButton: FC<Props> = (props) => {
       <label
         className={`${props.textColor} font-roboto text-base font-bold capitalize`}
       >
-       {props.text}
+        {props.text}
       </label>
       <IoIosArrowRoundForward
         className={`${props.circleIconColor} size-5 rounded-full`}
