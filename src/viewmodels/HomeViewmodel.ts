@@ -101,6 +101,20 @@ export class HomeViewModel {
             "categoryTag": "Vegetable"
         },
     ];
+    galleryData = [
+        {
+            name: "Organic Juice",
+            imageSrc: "/Home/Gallery/image_1.jpg"
+        },
+        {
+            name: "Organic Food",
+            imageSrc: "/Home/Gallery/image_2.jpg"
+        },
+        {
+            name: "Nuts Cookis",
+            imageSrc: "/Home/Gallery/image_3.jpg"
+        }
+    ]
 
     constructor() {
 
