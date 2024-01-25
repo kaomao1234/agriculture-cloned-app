@@ -2,7 +2,7 @@ import { Button } from "@mui/material";
 import { FC } from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import style from "./main.module.scss";
-import { CustomGeneralButton } from "@/components";
+import { CustomContainedButton } from "@/components";
 
 const Banner: FC = () => {
   return (
@@ -27,7 +27,7 @@ const Banner: FC = () => {
           <br />
           of life
         </div>
-        <CustomGeneralButton
+        <CustomContainedButton
           textColor="text-blue_dianne"
           circleIconColor="bg-blue_dianne"
           backgroundColor="bg-sunset_pearl"

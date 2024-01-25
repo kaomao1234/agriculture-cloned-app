@@ -3,7 +3,7 @@ import style from "./main.module.scss";
 import { Button } from "@mui/material";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { ProductCardModel } from "@/models";
-import { CustomGeneralButton, ProductCard } from "@/components";
+import { CustomContainedButton, ProductCard } from "@/components";
 interface Props {
   productItem: ProductCardModel[];
 }
@@ -28,7 +28,7 @@ const Shop: FC<Props> = ({ productItem }) => {
             );
           })}
         </div>
-        <CustomGeneralButton
+        <CustomContainedButton
           text="Loading More"
           textColor=""
           circleIconColor="bg-slate_600"

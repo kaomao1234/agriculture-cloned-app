@@ -1,6 +1,6 @@
 import { FC } from "react";
 import style from "./main.module.scss";
-import { CustomGeneralButton, ProductCard } from "@/components";
+import { CustomContainedButton, ProductCard } from "@/components";
 import { ProductCardModel } from "@/models";
 interface Props {
   data: ProductCardModel[];
@@ -8,7 +8,7 @@ interface Props {
 export const Offer: FC<Props> = (props) => {
   return (
     <div className="flex flex-col items-start justify-center bg-blue_dianne px-[130px] py-[100px]">
-      <div className="flex w-full flex-row justify-between">
+      <div className="flex w-full flex-row justify-between items-end">
         <div className="felx flex-row">
           <div className="w-28 font-yellowtail text-3xl font-normal text-acapulco">
             Offer
@@ -17,7 +17,7 @@ export const Offer: FC<Props> = (props) => {
             We Offer Organic For You
           </div>
         </div>
-        <CustomGeneralButton
+        <CustomContainedButton
           text="View All Product"
           textColor="text-blue_dianne"
           backgroundColor="bg-sunset_pearl"

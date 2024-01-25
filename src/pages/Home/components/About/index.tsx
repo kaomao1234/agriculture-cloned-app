@@ -2,7 +2,7 @@ import { FC } from "react";
 import style from "./main.module.scss";
 import { Button } from "@mui/material";
 import { IoIosArrowRoundForward } from "react-icons/io";
-import { CustomGeneralButton } from "@/components";
+import { CustomContainedButton } from "@/components";
 const About: FC = () => {
   return (
     <div id={style.main} className="bg-alabaster">
@@ -54,7 +54,7 @@ const About: FC = () => {
             </div>
           </div>
         </div>
-        <CustomGeneralButton
+        <CustomContainedButton
           text="Shop Now"
           textColor=""
           circleIconColor="bg-slate_600"
