@@ -48,7 +48,12 @@ const Counter: FC = () => {
               {Array(5)
                 .fill(0)
                 .map((val, index) => {
-                  return <FaStar className="size-[17px] text-sunset_pearl" />;
+                  return (
+                    <FaStar
+                      className="size-[17px] text-sunset_pearl"
+                      key={index}
+                    />
+                  );
                 })}
             </div>
             <label className="text-center text-black_coral_pearl">
