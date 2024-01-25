@@ -8,7 +8,7 @@ interface Props {
   backgroundColor: string;
   onClick?: () => void;
 }
-export const CustomGeneralButton: FC<Props> = (props) => {
+export const CustomContainedButton: FC<Props> = (props) => {
   return (
     <Button
       onClick={props.onClick}
