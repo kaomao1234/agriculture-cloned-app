@@ -28,7 +28,7 @@ const Home: FC = () => {
       <Counter />
       <Offer data={viewmodel.offerData} />
       <WhoWeAre />
-      <Gallery />
+      <Gallery data={viewmodel.galleryData} />
       <Blog />
       <Newslatteer />
     </div>
