@@ -9,14 +9,14 @@ const OfferBanner: FC = () => {
           className="absolute z-10 flex size-full flex-col items-start justify-start bg-transparent p-4 hover:bg-transparent"
           variant="contained"
         >
-          <div className="text-white font-yellowtail text-2xl font-normal">
+          <label className="text-white font-yellowtail text-2xl font-normal">
             Natural!!
-          </div>
-          <div className="text-white font-roboto text-[18px] font-extrabold">
+          </label>
+          <label className="text-white font-roboto text-[18px] font-extrabold text-left">
             Get Garden
             <br />
             Fresh Fruits
-          </div>
+          </label>
         </Button>
         <img src="/Home/OfferBanner/image_1.jpg" alt="" />
       </div>
@@ -25,14 +25,14 @@ const OfferBanner: FC = () => {
           className="absolute z-10 flex size-full flex-col items-start justify-start bg-transparent p-4 hover:bg-transparent"
           variant="contained"
         >
-          <div className="font-yellowtail text-xl font-normal text-acapulco">
+          <label className="font-yellowtail text-xl font-normal text-acapulco">
             Offer!!
-          </div>
-          <div className="font-roboto text-[18px] font-extrabold text-blue_dianne">
+          </label>
+          <label className="font-roboto text-[18px] font-extrabold text-blue_dianne text-left">
             Get 10% off
             <br />
             on Vegetables
-          </div>
+          </label>
         </Button>
         <img src="/Home/OfferBanner/image_2.jpg" alt="" />
       </div>
