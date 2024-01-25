@@ -1,3 +1,5 @@
+export { Blog } from "./Blog";
+export { Gallery } from "./Gallery";
 export { WhoWeAre } from "./WhoWeAre";
 export { Offer } from "./Offer";
 export { Counter } from "./Counter";
