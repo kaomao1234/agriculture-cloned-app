@@ -1,5 +1,6 @@
+export { CustomOutlinedButton } from "./CustomOutlinedButton";
 export { Newslatteer } from "./Newslatteer";
-export { CustomGeneralButton } from "./CustomGeneralButton";
+export { CustomContainedButton } from "./CustomContainedButton";
 export { ProductCard } from "./ProductCard";
 export { Footer } from "./Footer";
 export { Nav } from "./Nav";
