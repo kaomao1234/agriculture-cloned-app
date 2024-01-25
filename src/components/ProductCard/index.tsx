@@ -40,7 +40,7 @@ const ProductCard: FC<ProductCardModel> = (props) => {
             {Array(props.rating)
               .fill(0)
               .map((val, index) => {
-                return <FaStar className="size-[17px] text-sunset_pearl" />;
+                return <FaStar className="size-[17px] text-sunset_pearl" key={index}/>;
               })}
           </div>
         </div>
