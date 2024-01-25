@@ -11,8 +11,11 @@ import {
   Counter,
   Offer,
   WhoWeAre,
+  Gallery,
+  Blog,
 } from "./components";
 import { HomeViewModel } from "@/viewmodels";
+import { Newslatteer } from "@/components";
 const Home: FC = () => {
   const viewmodelRef = useRef(new HomeViewModel());
   const viewmodel = viewmodelRef.current;
@@ -23,12 +26,12 @@ const Home: FC = () => {
       <About />
       <Shop productItem={viewmodel.productItemCard} />
       <Counter />
-      <Offer data={viewmodel.offerData}/>
+      <Offer data={viewmodel.offerData} />
       <WhoWeAre />
-      <div></div>
-      <div></div>
+      <Gallery />
+      <Blog />
+      <Newslatteer />
     </div>
   );
 };
-
 export default Home;
