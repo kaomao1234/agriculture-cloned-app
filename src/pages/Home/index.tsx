@@ -13,7 +13,7 @@ import {
   WhoWeAre,
   Gallery,
   Blog,
-} from "./components";
+} from "@/components/Home";
 import { HomeViewModel } from "@/viewmodels";
 import { Newslatteer } from "@/components";
 const Home: FC = () => {

@@ -55,4 +55,4 @@ const WhoWeAre: FC = () => {
   );
 };
 
-export { WhoWeAre };
+export default WhoWeAre ;

@@ -5,7 +5,7 @@ import { ProductCardModel } from "@/models";
 interface Props {
   data: ProductCardModel[];
 }
-export const Offer: FC<Props> = (props) => {
+ const Offer: FC<Props> = (props) => {
   return (
     <div className="flex flex-col items-start justify-center bg-blue_dianne px-[130px] py-[100px]">
       <div className="flex w-full flex-row items-end justify-between">
@@ -34,3 +34,4 @@ export const Offer: FC<Props> = (props) => {
     </div>
   );
 };
+export default Offer;

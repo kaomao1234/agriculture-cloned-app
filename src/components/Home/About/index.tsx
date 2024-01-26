@@ -63,4 +63,4 @@ const About: FC = () => {
     </div>
   );
 };
-export { About };
+export default About ;

@@ -40,4 +40,4 @@ const Shop: FC<Props> = ({ productItem }) => {
   );
 };
 
-export { Shop };
+export default Shop ;

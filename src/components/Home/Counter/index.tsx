@@ -99,4 +99,4 @@ const Counter: FC = () => {
     </div>
   );
 };
-export { Counter };
+export default Counter ;

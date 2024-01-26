@@ -40,4 +40,4 @@ const OfferBanner: FC = () => {
     </div>
   );
 };
-export { OfferBanner };
+export default OfferBanner ;

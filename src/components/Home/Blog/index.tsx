@@ -5,7 +5,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import { CustomContainedButton, CustomOutlinedButton } from "@/components";
 import Image from "next/image";
 import PersonIcon from "@mui/icons-material/Person";
-export const Blog: FC = () => {
+const Blog: FC = () => {
   return (
     <div id={style.main}>
       <div className="flex flex-col gap-y-[24px]">
@@ -100,3 +100,4 @@ export const Blog: FC = () => {
     </div>
   );
 };
+export default Blog;

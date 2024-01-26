@@ -39,4 +39,4 @@ const Banner: FC = () => {
   );
 };
 
-export { Banner };
+export default Banner ;

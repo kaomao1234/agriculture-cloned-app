@@ -9,7 +9,7 @@ interface galleryItem {
 interface Props {
   data: galleryItem[];
 }
-export const Gallery: FC<Props> = (props) => {
+const Gallery: FC<Props> = (props) => {
   return (
     <div id={style.main}>
       {props.data.map((value, index) => {
@@ -32,3 +32,5 @@ export const Gallery: FC<Props> = (props) => {
     </div>
   );
 };
+
+export default Gallery;

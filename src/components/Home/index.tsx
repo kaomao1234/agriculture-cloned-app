@@ -1,0 +1,9 @@
+export {default as Blog } from "./Blog";
+export {default as Gallery } from "./Gallery";
+export {default as WhoWeAre } from "./WhoWeAre";
+export {default as Offer } from "./Offer";
+export {default as Counter } from "./Counter";
+export {default as Shop } from "./Shop";
+export {default as About } from "./About";
+export {default as OfferBanner } from "./OfferBanner";
+export {default as Banner } from "./Banner";
