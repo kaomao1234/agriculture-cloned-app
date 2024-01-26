@@ -13,7 +13,7 @@ export const Gallery: FC<Props> = (props) => {
     <div id={style.main}>
       {props.data.map((value, index) => {
         return (
-          <div className="relative flex overflow-clip">
+          <div className="relative flex overflow-clip" key={index}>
             <div className="absolute z-10 flex size-full items-center justify-center">
               <Button
                 variant="contained"
