@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, Fragment } from "react";
 import style from "./main.module.scss";
 import { CustomContainedButton, ProductCard } from "@/components";
 import { ProductCardModel } from "@/models";
@@ -8,7 +8,7 @@ interface Props {
 export const Offer: FC<Props> = (props) => {
   return (
     <div className="flex flex-col items-start justify-center bg-blue_dianne px-[130px] py-[100px]">
-      <div className="flex w-full flex-row justify-between items-end">
+      <div className="flex w-full flex-row items-end justify-between">
         <div className="felx flex-row">
           <div className="w-28 font-yellowtail text-3xl font-normal text-acapulco">
             Offer
@@ -26,7 +26,9 @@ export const Offer: FC<Props> = (props) => {
       </div>
       <div className="mt-[25px] grid w-full grid-cols-4 gap-x-5">
         {props.data.map((value, index) => (
-          <ProductCard {...value} key={index} />
+          <Fragment key={index}>
+            <ProductCard {...value} key={index} />
+          </Fragment>
         ))}
       </div>
     </div>

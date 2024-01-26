@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, Fragment } from "react";
 import style from "./main.module.scss";
 import { FaInstagram, FaFacebook, FaPinterest } from "react-icons/fa6";
 import IconButton from "@mui/material/IconButton";
@@ -54,12 +54,14 @@ const Footer: FC = () => {
         </label>
         <div className="mt-[25px] flex flex-row gap-4">
           {contractIcon.map((value, index) => (
-            <IconButton
+        <Fragment key={index}>
+              <IconButton
               key={index}
               className="bg-[#EFF6F1] p-6 text-[30px] text-blue_dianne"
             >
               {value(index)}
             </IconButton>
+        </Fragment>
           ))}
         </div>
       </div>
