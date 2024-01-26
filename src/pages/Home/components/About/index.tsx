@@ -19,7 +19,7 @@ const About: FC = () => {
         <div className="font-['Open Sans'] text-lg font-normal text-black_coral_pearl">
           Simply dummy text of the printing and typesetting industry. Lorem had
           ceased to <br />
-          been the industry's standard dummy text ever since the 1500s, when an
+          been the industry&apos;s standard dummy text ever since the 1500s, when an
           unknown printer took a galley.
         </div>
         <div className="mb-[15px] mt-[23px] flex flex-row gap-x-5">
