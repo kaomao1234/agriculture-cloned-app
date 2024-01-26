@@ -73,7 +73,7 @@ const Counter: FC = () => {
         </div>
         <div className="mt-[80px] flex flex-row justify-around">
           {details.map((value, index) => (
-            <div className="flex flex-col items-center justify-center rounded-full border-4 border-acapulco">
+            <div key={index} className="flex flex-col items-center justify-center rounded-full border-4 border-acapulco">
               <div className="m-1 flex size-36 flex-col items-center justify-center rounded-full bg-alto p-2">
                 <div className="font-roboto text-[30px] font-extrabold text-blue_dianne">
                   {value.unit}
