@@ -3,18 +3,18 @@ import { FC } from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import style from "./main.module.scss";
 import { CustomContainedButton } from "@/components";
-
+import Image from "next/image";
 const Banner: FC = () => {
   return (
     <div id={style.main}>
       <div className="absolute z-0 size-full overflow-clip">
         <div className="relative -translate-y-[100px]">
-          <img src={"/Home/Banner/image.png"} id={style.image} alt={""}></img>
-          <img
+          <Image src={"/Home/Banner/image.png"} id={style.image} alt={""}></Image>
+          <Image
             id={style.background}
             src={"/Home/Banner/Background.png"}
             alt={""}
-          ></img>
+          ></Image>
         </div>
       </div>
       <div className="z-1 absolute flex size-full flex-col pl-44 pt-28">

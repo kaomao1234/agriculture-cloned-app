@@ -1,9 +1,10 @@
 import { FC } from "react";
 import style from "./main.module.scss";
+import Image from "next/image";
 const WhoWeAre: FC = () => {
   return (
     <div id={style.main}>
-      <img src="/Home/WhoWeAre/background.jpg" className="w-[30%]" />
+      <Image src="/Home/WhoWeAre/background.jpg" className="w-[30%]" alt="" />
       <div className="absolute z-10 flex size-full flex-col items-center justify-center">
         <div className="ml-[45%] flex size-fit flex-col gap-y-[35px] rounded-s-[30px] bg-white p-10">
           <div className="flex flex-col">
@@ -45,7 +46,8 @@ const WhoWeAre: FC = () => {
           </div>
         </div>
       </div>
-      <img
+      <Image
+      alt=""
         src="/Home/WhoWeAre/background.jpg"
         className="absolute z-0 w-[50%]  translate-y-[-12rem]"
       />

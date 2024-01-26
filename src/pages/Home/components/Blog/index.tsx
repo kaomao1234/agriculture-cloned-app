@@ -3,6 +3,7 @@ import style from "./main.module.scss";
 import { Button } from "@mui/material";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { CustomContainedButton, CustomOutlinedButton } from "@/components";
+import Image from "next/image";
 import PersonIcon from "@mui/icons-material/Person";
 export const Blog: FC = () => {
   return (
@@ -51,7 +52,8 @@ export const Blog: FC = () => {
                 />
               </div>
             </div>
-            <img
+            <Image
+            alt=""
               src="/Home/Blog/image_1.png"
               className="mb-20 w-full rounded-3xl"
             />
@@ -87,7 +89,8 @@ export const Blog: FC = () => {
                 />
               </div>
             </div>
-            <img
+            <Image
+            alt=""
               src="/Home/Blog/image_2.png"
               className="mb-20 w-full rounded-3xl"
             />

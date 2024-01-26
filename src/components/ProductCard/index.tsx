@@ -3,19 +3,22 @@ import style from "./main.module.scss";
 import { ProductCardModel } from "@/models";
 import { Button } from "@mui/material";
 import { FaStar } from "react-icons/fa6";
+import Image from "next/image";
 const ProductCard: FC<ProductCardModel> = (props) => {
+  const image  = props.imageSrc == undefined ? "" : props.imageSrc;
   return (
     <Button
       variant="contained"
       className="flex flex-col items-center overflow-clip rounded-[30px] bg-alabaster p-0 pt-[15px] hover:bg-alabaster"
     >
-      <div className="size-fit w-full flex items-start">
+      <div className="flex size-fit w-full items-start">
         <label className="font-['Open Sans'] ml-[15px] rounded-lg bg-blue_dianne px-3 py-1.5 text-sm font-semibold capitalize text-white">
           Vegetable
         </label>
       </div>
-      <img
-        src={props.imageSrc}
+      <Image
+        alt=""
+        src={image}
         className="mt-[13px] size-[55%] bg-alabaster bg-blend-multiply"
       />
       <div className="flex w-full flex-col items-start gap-y-[13px] px-[20px] pb-[17px] pt-[2px]">
@@ -40,7 +43,12 @@ const ProductCard: FC<ProductCardModel> = (props) => {
             {Array(props.rating)
               .fill(0)
               .map((val, index) => {
-                return <FaStar className="size-[17px] text-sunset_pearl" key={index}/>;
+                return (
+                  <FaStar
+                    className="size-[17px] text-sunset_pearl"
+                    key={index}
+                  />
+                );
               })}
           </div>
         </div>

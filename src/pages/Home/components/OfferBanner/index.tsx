@@ -1,6 +1,7 @@
 import { FC } from "react";
 import style from "./main.module.scss";
 import { Avatar, Button, ImageListItem } from "@mui/material";
+import Image from "next/image";
 const OfferBanner: FC = () => {
   return (
     <div id={style.main}>
@@ -18,7 +19,7 @@ const OfferBanner: FC = () => {
             Fresh Fruits
           </label>
         </Button>
-        <img src="/Home/OfferBanner/image_1.jpg" alt="" />
+        <Image src="/Home/OfferBanner/image_1.jpg" alt="" />
       </div>
       <div className="relative flex size-fit overflow-clip rounded-[30px]">
         <Button
@@ -34,7 +35,7 @@ const OfferBanner: FC = () => {
             on Vegetables
           </label>
         </Button>
-        <img src="/Home/OfferBanner/image_2.jpg" alt="" />
+        <Image src="/Home/OfferBanner/image_2.jpg" alt="" />
       </div>
     </div>
   );

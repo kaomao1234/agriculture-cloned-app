@@ -1,6 +1,6 @@
 import { Button, TextField } from "@mui/material";
 import { FC } from "react";
-
+import Image from "next/image";
 export const Newslatteer: FC = () => {
   return (
     <div className="relative mx-[130px] mb-[60px] mt-[90px] overflow-clip rounded-3xl">
@@ -27,7 +27,7 @@ export const Newslatteer: FC = () => {
           </div>
         </div>
       </div>
-      <img src="Newslatteer/Photo.jpg" />
+      <Image alt="" src="Newslatteer/Photo.jpg" />
     </div>
   );
 };
