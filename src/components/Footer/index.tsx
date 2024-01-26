@@ -5,10 +5,10 @@ import IconButton from "@mui/material/IconButton";
 import { FaTwitter } from "react-icons/fa";
 const Footer: FC = () => {
   const contractIcon = [
-    <FaInstagram />,
-    <FaFacebook />,
-    <FaTwitter />,
-    <FaPinterest />,
+    (key: number) => <FaInstagram key={key} />,
+    (key: number) => <FaFacebook key={key} />,
+    (key: number) => <FaTwitter key={key} />,
+    (key: number) => <FaPinterest key={key} />,
   ];
   return (
     <div id={style.Footer}>
@@ -41,7 +41,7 @@ const Footer: FC = () => {
           </label>
         </div>
       </div>
-      <div className="mx-3 flex flex-col items-center text-center w-[50%]">
+      <div className="mx-3 flex w-[50%] flex-col items-center text-center">
         <div className="flex flex-row items-center gap-2">
           <img src="/Nav/Logo.png" className="w-7" />
           <label className="font-roboto text-2xl font-bold text-blue_dianne">
@@ -52,9 +52,14 @@ const Footer: FC = () => {
           Simply dummy text of the printing and typesetting industry. Lorem
           Ipsum simply dummy text of the printing{" "}
         </label>
-        <div className="flex flex-row mt-[25px] gap-4">
+        <div className="mt-[25px] flex flex-row gap-4">
           {contractIcon.map((value, index) => (
-            <IconButton key={index} className="p-6 bg-[#EFF6F1] text-blue_dianne text-[30px]">{value}</IconButton>
+            <IconButton
+              key={index}
+              className="bg-[#EFF6F1] p-6 text-[30px] text-blue_dianne"
+            >
+              {value(index)}
+            </IconButton>
           ))}
         </div>
       </div>
