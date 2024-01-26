@@ -1,12 +1,11 @@
 import { FC } from "react";
 import style from "./main.module.scss";
-import { Button } from "@mui/material";
-import { IoIosArrowRoundForward } from "react-icons/io";
 import { CustomContainedButton } from "@/components";
+import Image  from "next/image";
 const About: FC = () => {
   return (
     <div id={style.main} className="bg-alabaster">
-      <img src="/Home/About/image.png" className="size-[40%]"></img>
+      <Image alt="" src="/Home/About/image.png" className="size-[40%]" />
       <div className="flex flex-col justify-center">
         <div className="font-yellowtail text-3xl font-normal text-acapulco">
           About Us
@@ -23,7 +22,7 @@ const About: FC = () => {
           unknown printer took a galley.
         </div>
         <div className="mb-[15px] mt-[23px] flex flex-row gap-x-5">
-          <img
+          <Image
             src="/Home/About/content_1.svg"
             className="rounded-[20px] bg-white p-5"
             alt=""
@@ -39,7 +38,7 @@ const About: FC = () => {
           </div>
         </div>
         <div className="mb-[23px] flex flex-row gap-x-5">
-          <img
+          <Image
             src="/Home/About/content_2.svg"
             className="rounded-[20px] bg-white p-5"
             alt=""

@@ -3,6 +3,7 @@ import style from "./main.module.scss";
 import { FaInstagram, FaFacebook, FaPinterest } from "react-icons/fa6";
 import IconButton from "@mui/material/IconButton";
 import { FaTwitter } from "react-icons/fa";
+import Image from "next/image";
 const Footer: FC = () => {
   const contractIcon = [
     (key: number) => <FaInstagram key={key} />,
@@ -43,7 +44,7 @@ const Footer: FC = () => {
       </div>
       <div className="mx-3 flex w-[50%] flex-col items-center text-center">
         <div className="flex flex-row items-center gap-2">
-          <img src="/Nav/Logo.png" className="w-7" />
+          <Image src="/Nav/Logo.png" className="w-7" alt=""/>
           <label className="font-roboto text-2xl font-bold text-blue_dianne">
             Organick
           </label>

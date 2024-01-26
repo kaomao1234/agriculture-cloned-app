@@ -1,6 +1,7 @@
 import { FC, Fragment } from "react";
 import style from "./main.module.scss";
 import { Button } from "@mui/material";
+import Image from "next/image";
 interface galleryItem {
   name: string;
   imageSrc: string;
@@ -23,7 +24,7 @@ export const Gallery: FC<Props> = (props) => {
                   {value.name}
                 </Button>
               </div>
-              <img src={value.imageSrc} alt="" />
+              <Image src={value.imageSrc} alt="" />
             </div>
           </Fragment>
         );

@@ -2,6 +2,7 @@ import { FC, useState } from "react";
 import style from "./main.module.scss";
 import { Avatar, useTheme } from "@mui/material";
 import { FaStar } from "react-icons/fa";
+import Image from "next/image";
 const Counter: FC = () => {
   const [activeStep, setActiveStep] = useState(0);
   const details: Record<string, string>[] = [
@@ -86,11 +87,12 @@ const Counter: FC = () => {
           ))}
         </div>
       </div>
-      <img
+      <Image
+      alt=""
         src="/Home/Counter/Photo.png"
         className="absolute left-[-30%] top-0 z-0 w-[46%] scale-[-1] bg-[#FCFCFC]"
       />
-      <img
+      <Image alt=""
         src="/Home/Counter/Photo.png"
         className="absolute right-[-30%] top-0 z-0 w-[46%] bg-[#FCFCFC]"
       />

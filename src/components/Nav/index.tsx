@@ -3,13 +3,14 @@ import { HiMagnifyingGlass } from "react-icons/hi2";
 import { IoMdCart } from "react-icons/io";
 import style from "./main.module.scss";
 import { Button, IconButton } from "@mui/material";
+import Image from "next/image";
 
 const Nav: FC = () => {
   return (
     <div className={style.nav}>
       <div className={style.content}>
         <div className={style.logo}>
-          <img className="w-[30%] mr-1" src="/Nav/Logo.png" />
+          <Image className="w-[30%] mr-1" src="/Nav/Logo.png" alt="" />
           <label className="font-roboto text-lg font-bold text-blue_dianne">
             Organick
           </label>
