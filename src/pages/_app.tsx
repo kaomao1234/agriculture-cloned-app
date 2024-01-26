@@ -11,8 +11,11 @@ export default function App({ Component, pageProps }: AppProps) {
         <Component {...pageProps} />
         <Footer />
       </div>
-      <div className="flex h-full min-h-screen w-full items-center justify-center xl:hidden">
-        <CircularProgress />
+      <div className="flex h-full min-h-screen w-full flex-col items-center justify-center gap-2 xl:hidden">
+        <label className="font-yellowtail text-2xl text-sunset_pearl">
+          Open this web with desktop resolution
+        </label>
+        <CircularProgress className="text-sunset_pearl" />
       </div>
     </div>
   );
