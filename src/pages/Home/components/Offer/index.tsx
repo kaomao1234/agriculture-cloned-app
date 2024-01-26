@@ -26,7 +26,7 @@ export const Offer: FC<Props> = (props) => {
       </div>
       <div className="mt-[25px] grid w-full grid-cols-4 gap-x-5">
         {props.data.map((value, index) => (
-          <ProductCard {...value} />
+          <ProductCard {...value} key={index} />
         ))}
       </div>
     </div>
