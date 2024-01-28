@@ -10,7 +10,7 @@ const Nav: FC = () => {
     <div className={style.nav}>
       <div className={style.content}>
         <div className={style.logo}>
-          <Image className="w-[30%] mr-1" src="/Nav/Logo.png" alt="" />
+          <img className="w-[30%] mr-1" src="/Nav/Logo.png" alt="" />
           <label className="font-roboto text-lg font-bold text-blue_dianne">
             Organick
           </label>

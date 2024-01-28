@@ -4,10 +4,11 @@ import { Button } from "@mui/material";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { ProductCardModel } from "@/models";
 import { CustomContainedButton, ProductCard } from "@/components";
+import Carousel from "react-material-ui-carousel";
 interface Props {
-  productItem: ProductCardModel[];
+  data: ProductCardModel[][];
 }
-const Shop: FC<Props> = ({ productItem }) => {
+const Shop: FC<Props> = ({ data }) => {
   return (
     <div id={style.main}>
       <div className="flex flex-col items-center">
@@ -17,16 +18,42 @@ const Shop: FC<Props> = ({ productItem }) => {
         <div className="font-roboto text-[25px] font-extrabold text-blue_dianne">
           Our Products
         </div>
-        <div className="mb-[60px] mt-[40px] grid grid-cols-4 gap-5">
-          {productItem.map((val, index) => {
+        <div className="mt-[40px] flex w-full">
+          <Carousel
+            className="w-full text-2xl pb-16 mx-20"
+            navButtonsAlwaysVisible={true}
+            indicators={false}
+            swipe={true}
+            cycleNavigation={false}
+            navButtonsProps={{
+              style: {
+                backgroundColor:"black",
+                backgroundClip:"text",
+                opacity:"1",
+                color:"black",
+              },
+            }}
+          >
+            {data.map((val, index) => (
+              <div
+                className="grid w-full grid-cols-4 gap-5 px-20"
+                key={index}
+              >
+                {val.map((val, indexImg) => (
+                  <ProductCard {...val} key={indexImg} />
+                ))}
+              </div>
+            ))}
+          </Carousel>
+          {/* {productItem.map((val, index) => {
             return (
               <ProductCard
                 {...val}
-                imageSrc={`Home/Shop/image_${index + 1}.png`}
+                imageSrc={`/Home/Shop/image_${index + 1}.png`}
                 key={index}
               />
             );
-          })}
+          })} */}
         </div>
         <CustomContainedButton
           text="Loading More"
@@ -34,10 +61,9 @@ const Shop: FC<Props> = ({ productItem }) => {
           circleIconColor="bg-slate_600"
           backgroundColor="bg-blue_dianne"
         />
-      
       </div>
     </div>
   );
 };
 
-export default Shop ;
+export default Shop;

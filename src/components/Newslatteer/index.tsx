@@ -27,7 +27,7 @@ export const Newslatteer: FC = () => {
           </div>
         </div>
       </div>
-      <Image alt="" src="Newslatteer/Photo.jpg" />
+      <img alt="" src="/Newslatteer/Photo.jpg" />
     </div>
   );
 };

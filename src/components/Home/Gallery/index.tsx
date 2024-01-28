@@ -24,7 +24,7 @@ const Gallery: FC<Props> = (props) => {
                   {value.name}
                 </Button>
               </div>
-              <Image src={value.imageSrc} alt="" />
+              <img src={value.imageSrc} alt=""/>
             </div>
           </Fragment>
         );

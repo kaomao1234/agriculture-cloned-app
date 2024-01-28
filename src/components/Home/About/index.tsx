@@ -5,12 +5,12 @@ import Image  from "next/image";
 const About: FC = () => {
   return (
     <div id={style.main} className="bg-alabaster">
-      <Image alt="" src="/Home/About/image.png" className="size-[40%]" />
+      <img alt="" src="/Home/About/image.png" className="size-[30%]"/>
       <div className="flex flex-col justify-center">
-        <div className="font-yellowtail text-3xl font-normal text-acapulco">
+        <div className="font-yellowtail text-2xl font-normal text-acapulco">
           About Us
         </div>
-        <div className="font-roboto text-[30px] font-extrabold text-blue_dianne">
+        <div className="font-roboto text-xl font-extrabold text-blue_dianne">
           We Believe in Working
           <br />
           Accredited Farmers
@@ -21,14 +21,14 @@ const About: FC = () => {
           been the industry&apos;s standard dummy text ever since the 1500s, when an
           unknown printer took a galley.
         </div>
-        <div className="mb-[15px] mt-[23px] flex flex-row gap-x-5">
-          <Image
+        <div className="mb-[15px] mt-[23px] flex flex-row gap-x-5 items-center">
+          <img
             src="/Home/About/content_1.svg"
             className="rounded-[20px] bg-white p-5"
             alt=""
           />
           <div className="flex flex-col">
-            <div className="font-roboto text-[20px] font-extrabold text-blue_dianne">
+            <div className="font-roboto text-xl font-extrabold text-blue_dianne">
               Organic Foods Only
             </div>
             <div className="font-['Open Sans'] text-base font-normal text-black_coral_pearl">
@@ -37,14 +37,14 @@ const About: FC = () => {
             </div>
           </div>
         </div>
-        <div className="mb-[23px] flex flex-row gap-x-5">
-          <Image
+        <div className="mb-[23px] flex flex-row gap-x-5 items-center">
+          <img
             src="/Home/About/content_2.svg"
             className="rounded-[20px] bg-white p-5"
             alt=""
           />
           <div className="flex flex-col">
-            <div className="font-roboto text-[20px] font-extrabold text-blue_dianne">
+            <div className="font-roboto text-xl font-extrabold text-blue_dianne">
               Quality Standards
             </div>
             <div className="font-['Open Sans'] text-base font-normal text-black_coral_pearl">

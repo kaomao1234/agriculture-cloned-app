@@ -1,5 +1,6 @@
 import type { Config } from 'tailwindcss'
 const defaultTheme = require('tailwindcss/defaultTheme')
+const colors = require('tailwindcss/colors')
 const config: Config = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -23,7 +24,8 @@ const config: Config = {
       'alabaster': '#F9F8F8',
       'saltpan': '#EFF6F1',
       'slate_600':"#335B6B",
-      'white': "white"
+      'white': "white",
+      ...colors
     },
     extend: {
       backgroundImage: {

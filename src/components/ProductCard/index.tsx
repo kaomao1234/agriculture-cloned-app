@@ -16,13 +16,13 @@ const ProductCard: FC<ProductCardModel> = (props) => {
           Vegetable
         </label>
       </div>
-      <Image
+      <img
         alt=""
         src={image}
-        className="mt-[13px] size-[55%] bg-alabaster bg-blend-multiply"
+        className="mt-[13px] bg-alabaster bg-blend-multiply size-[200px]"
       />
       <div className="flex w-full flex-col items-start gap-y-[13px] px-[20px] pb-[17px] pt-[2px]">
-        <label className="text-center font-roboto text-lg font-semibold capitalize text-blue_dianne">
+        <label className="text-center font-roboto text-[15px] font-semibold capitalize text-blue_dianne">
           {props.productName}
         </label>
         <div

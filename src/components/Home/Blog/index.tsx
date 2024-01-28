@@ -52,7 +52,7 @@ const Blog: FC = () => {
                 />
               </div>
             </div>
-            <Image
+            <img
             alt=""
               src="/Home/Blog/image_1.png"
               className="mb-20 w-full rounded-3xl"
@@ -89,7 +89,7 @@ const Blog: FC = () => {
                 />
               </div>
             </div>
-            <Image
+            <img
             alt=""
               src="/Home/Blog/image_2.png"
               className="mb-20 w-full rounded-3xl"

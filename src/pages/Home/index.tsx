@@ -19,12 +19,13 @@ import { Newslatteer } from "@/components";
 const Home: FC = () => {
   const viewmodelRef = useRef(new HomeViewModel());
   const viewmodel = viewmodelRef.current;
+  const chunkingProductItemCard = viewmodel.chunkArray(viewmodel.productItemCard,4)
   return (
     <div id={style.main}>
       <Banner />
       <OfferBanner />
       <About />
-      <Shop productItem={viewmodel.productItemCard} />
+      <Shop data={chunkingProductItemCard} />
       <Counter />
       <Offer data={viewmodel.offerData} />
       <WhoWeAre />

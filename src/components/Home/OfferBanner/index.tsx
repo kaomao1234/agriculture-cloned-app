@@ -19,7 +19,7 @@ const OfferBanner: FC = () => {
             Fresh Fruits
           </label>
         </Button>
-        <Image src="/Home/OfferBanner/image_1.jpg" alt="" />
+        <img src="/Home/OfferBanner/image_1.jpg" alt=""/>
       </div>
       <div className="relative flex size-fit overflow-clip rounded-[30px]">
         <Button
@@ -35,7 +35,7 @@ const OfferBanner: FC = () => {
             on Vegetables
           </label>
         </Button>
-        <Image src="/Home/OfferBanner/image_2.jpg" alt="" />
+        <img src="/Home/OfferBanner/image_2.jpg" alt=""/>
       </div>
     </div>
   );

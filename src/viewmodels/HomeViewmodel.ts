@@ -3,7 +3,7 @@ import { ProductCardModel } from "@/models";
 export class HomeViewModel {
     productItemCard: ProductCardModel[] = [
         {
-            "imageSrc": "https://via.placeholder.com/335x324",
+            "imageSrc": "/Home/Shop/image_1.png",
             "productName": "Calabrese Broccoli",
             "currentPrice": "$13.00",
             "originalPrice": "$20.00",
@@ -11,7 +11,7 @@ export class HomeViewModel {
             "categoryTag": "Vegetable"
         },
         {
-            "imageSrc": "https://via.placeholder.com/375x375",
+            "imageSrc": "/Home/Shop/image_2.png",
             "productName": "Fresh Banana Fruites",
             "currentPrice": "$14.00",
             "originalPrice": "$20.00",
@@ -19,7 +19,7 @@ export class HomeViewModel {
             "categoryTag": "Fresh" // Tag not provided in the HTML
         },
         {
-            "imageSrc": "https://via.placeholder.com/328x328",
+            "imageSrc": "/Home/Shop/image_3.png",
             "productName": "White Nuts",
             "currentPrice": "$15.00",
             "originalPrice": "$20.00",
@@ -27,7 +27,7 @@ export class HomeViewModel {
             "categoryTag": "Millets"
         },
         {
-            "imageSrc": "https://via.placeholder.com/330x330",
+            "imageSrc": "/Home/Shop/image_4.png",
             "productName": "Vegan Red Tomato",
             "currentPrice": "$17.00",
             "originalPrice": "$20.00",
@@ -35,7 +35,7 @@ export class HomeViewModel {
             "categoryTag": "Vegetable"
         },
         {
-            "imageSrc": "https://via.placeholder.com/359x359",
+            "imageSrc": "/Home/Shop/image_5.png",
             "productName": "Mung Bean",
             "currentPrice": "$11.00",
             "originalPrice": "$20.00",
@@ -43,7 +43,7 @@ export class HomeViewModel {
             "categoryTag": "Health"
         },
         {
-            "imageSrc": "https://via.placeholder.com/334x250",
+            "imageSrc": "/Home/Shop/image_6.png",
             "productName": "Brown Hazelnut",
             "currentPrice": "$12.00",
             "originalPrice": "$20.00",
@@ -51,7 +51,7 @@ export class HomeViewModel {
             "categoryTag": "Nuts"
         },
         {
-            "imageSrc": "https://via.placeholder.com/392x392",
+            "imageSrc": "/Home/Shop/image_7.png",
             "productName": "Eggs",
             "currentPrice": "$17.00",
             "originalPrice": "$20.00",
@@ -59,7 +59,7 @@ export class HomeViewModel {
             "categoryTag": "Fresh"
         },
         {
-            "imageSrc": "https://via.placeholder.com/362x362",
+            "imageSrc": "/Home/Shop/image_8.png",
             "productName": "Zelco Suji Elaichi Rusk",
             "currentPrice": "$15.00",
             "originalPrice": "$20.00",
@@ -119,4 +119,14 @@ export class HomeViewModel {
     constructor() {
 
     }
+    chunkArray(array: any[], size: number): any[][] {
+        const chunkedArr = [];
+        let index = 0;
+        while (index < array.length) {
+            chunkedArr.push(array.slice(index, size + index));
+            index += size;
+        }
+        return chunkedArr;
+    }
+
 }

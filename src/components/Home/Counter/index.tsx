@@ -87,12 +87,12 @@ const Counter: FC = () => {
           ))}
         </div>
       </div>
-      <Image
+      <img
       alt=""
         src="/Home/Counter/Photo.png"
         className="absolute left-[-30%] top-0 z-0 w-[46%] scale-[-1] bg-[#FCFCFC]"
       />
-      <Image alt=""
+      <img alt=""
         src="/Home/Counter/Photo.png"
         className="absolute right-[-30%] top-0 z-0 w-[46%] bg-[#FCFCFC]"
       />

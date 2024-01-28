@@ -44,7 +44,7 @@ const Footer: FC = () => {
       </div>
       <div className="mx-3 flex w-[50%] flex-col items-center text-center">
         <div className="flex flex-row items-center gap-2">
-          <Image src="/Nav/Logo.png" className="w-7" alt=""/>
+          <img src="/Nav/Logo.png" className="w-7" alt=""/>
           <label className="font-roboto text-2xl font-bold text-blue_dianne">
             Organick
           </label>

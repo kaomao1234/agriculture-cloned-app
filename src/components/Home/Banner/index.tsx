@@ -9,12 +9,12 @@ const Banner: FC = () => {
     <div id={style.main}>
       <div className="absolute z-0 size-full overflow-clip">
         <div className="relative -translate-y-[100px]">
-          <Image src={"/Home/Banner/image.png"} id={style.image} alt={""}></Image>
-          <Image
+          <img src={"/Home/Banner/image.png"} id={style.image} alt={""} />
+          <img
             id={style.background}
             src={"/Home/Banner/Background.png"}
             alt={""}
-          ></Image>
+          />
         </div>
       </div>
       <div className="z-1 absolute flex size-full flex-col pl-44 pt-28">
