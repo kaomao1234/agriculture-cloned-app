@@ -13,10 +13,10 @@ import {
   WhoWeAre,
   Gallery,
   Blog,
-} from "@/components/Home";
+} from "@/components/Page/Home";
 import { HomeViewModel } from "@/viewmodels";
 import { Newslatteer } from "@/components";
-const Home: FC = () => {
+const HomePage: FC = () => {
   const viewmodelRef = useRef(new HomeViewModel());
   const viewmodel = viewmodelRef.current;
   const chunkingProductItemCard = viewmodel.chunkArray(viewmodel.productItemCard,4)
@@ -35,4 +35,4 @@ const Home: FC = () => {
     </div>
   );
 };
-export default Home;
+export default HomePage;
