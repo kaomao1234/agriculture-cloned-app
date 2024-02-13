@@ -7,29 +7,54 @@ import Image from "next/image";
 
 const Nav: FC = () => {
   return (
-    <div className={style.nav}>
-      <div className={style.content}>
-        <div className={style.logo}>
-          <img className="w-[30%] mr-1" src="/Nav/Logo.png" alt="" />
+    <div className="flex w-full flex-row bg-white py-3 px-5">
+      <div className="flex flex-row items-center justify-between w-full">
+        <div className="flex flex-row items-center gap-2 w-[150px]">
+          <img className=" size-[20%]" src="/Nav/Logo.png" alt="" />
           <label className="font-roboto text-lg font-bold text-blue_dianne">
             Organick
           </label>
         </div>
-        <div className={style.menu}>
-          <Button variant="text" className="capitalize text-blue_dianne font-roboto font-bold text-xl">Home</Button>
-          <Button variant="text" className="capitalize text-blue_dianne font-roboto font-bold text-xl">About</Button>
-          <Button variant="text" className="capitalize text-blue_dianne font-roboto font-bold text-xl">Pages</Button>
-          <Button variant="text" className="capitalize text-blue_dianne font-roboto font-bold text-xl">Shop</Button>
-          <Button variant="text" className="capitalize text-blue_dianne font-roboto font-bold text-xl">News</Button>
+        <div className="flex flex-row gap-x-5 mr-5">
+          <Button
+            variant="text"
+            className="font-roboto text-lg font-bold capitalize text-blue_dianne "
+          >
+            Home
+          </Button>
+          <Button
+            variant="text"
+            className="font-roboto text-lg font-bold capitalize text-blue_dianne"
+          >
+            About
+          </Button>
+          <Button
+            variant="text"
+            className="font-roboto text-lg font-bold capitalize text-blue_dianne"
+          >
+            Pages
+          </Button>
+          <Button
+            variant="text"
+            className="font-roboto text-lg font-bold capitalize text-blue_dianne"
+          >
+            Shop
+          </Button>
+          <Button
+            variant="text"
+            className="font-roboto text-lg font-bold capitalize text-blue_dianne"
+          >
+            News
+          </Button>
         </div>
-        <div className={style.search}>
-          <input className="bg-transparent p-2 text-black_coral_pearl outline-none"></input>
-          <IconButton className="text-white my-[5px] rounded-full bg-acapulco p-2 size-fit flex items-center justify-center">
+        <div className="flex w-fit flex-row items-center justify-center rounded-[36px] bg-slate-200 px-1">
+          <input className="bg-transparent p-3 text-black_coral_pearl outline-none"></input>
+          <IconButton className="my-[5px] flex size-fit items-center justify-center rounded-full bg-acapulco p-2 text-white">
             <HiMagnifyingGlass className="size-6"></HiMagnifyingGlass>
           </IconButton>
         </div>
-        <div className={style.cart}>
-          <IconButton className="text-white my-[5px] rounded-full bg-blue_dianne p-2 size-fit flex items-center justify-center">
+        <div className="flex flex-row rounded-[33px] items-center border-neutral-200 border-2 gap-x-3 px-2">
+          <IconButton className="my-[5px] flex size-fit items-center justify-center rounded-full bg-blue_dianne p-2 text-white">
             <IoMdCart className="size-5"></IoMdCart>
           </IconButton>
           <label className="font-roboto text-base font-semibold text-blue_dianne">

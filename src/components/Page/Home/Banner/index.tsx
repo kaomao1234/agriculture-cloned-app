@@ -1,23 +1,69 @@
 import { Button } from "@mui/material";
-import { FC } from "react";
+import { FC, useEffect, useLayoutEffect, useRef, useState } from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import style from "./main.module.scss";
 import { CustomContainedButton } from "@/components";
-import Image from "next/image";
+import { platform } from "os";
+interface size {
+  width: number;
+  height: number;
+}
 const Banner: FC = () => {
+  const [size, setSize] = useState<size | null>(null);
+  const [platformSize, setPlatFormSize] = useState<size | null>(null);
+
+  useLayoutEffect(() => {
+    const img = new Image();
+    img.onload = () => {
+      setSize((prev) => {
+        return {
+          height: img.height,
+          width: img.width,
+        };
+      });
+      console.log(size);
+    };
+    img.src = "/Home/Banner/Background.png";
+    const handleResize = () => {
+      setPlatFormSize((prev) => ({
+        height: window.innerHeight,
+        width: window.innerWidth,
+      }));
+      
+      
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup function to remove the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
-    <div id={style.main}>
-      <div className="absolute z-0 size-full overflow-clip">
-        <div className="relative -translate-y-[100px]">
-          <img src={"/Home/Banner/image.png"} id={style.image} alt={""} />
+    <div className="relative">
+      <div className="overflow-clip h-[450px] ">
+        <div
+          className="`relative "
+          style={{
+            maxWidth: `${size?.width}px`,
+            width: `${platformSize?.width}px`,
+            // height: `${platformSize?.height}px`,
+          }}
+        >
           <img
-            id={style.background}
             src={"/Home/Banner/Background.png"}
             alt={""}
+            className=" absolute z-10 size-full object-cover"
+          />
+          <img
+            src={"/Home/Banner/image.png"}
+            alt={""}
+            className="absolute z-0 h-full w-full object-cover"
           />
         </div>
       </div>
-      <div className="z-1 absolute flex size-full flex-col pl-44 pt-28">
+      {/* <div className="z-1 absolute flex size-full flex-col pt-28">
         <div className="relative font-yellowtail text-2xl text-acapulco">
           100% Natural Food
         </div>
@@ -34,9 +80,9 @@ const Banner: FC = () => {
           text="Explore Now"
         />
       
-      </div>
+      </div> */}
     </div>
   );
 };
 
-export default Banner ;
+export default Banner;

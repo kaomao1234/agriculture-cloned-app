@@ -13,6 +13,7 @@ const config: Config = {
       roboto: ['Roboto',
         'sans-serif'],
       yellowtail: ['Yellowtail', 'cursive'],
+      sans: ['Open Sans', 'sans-serif']
     },
     colors: {
       'transparent': 'transparent',

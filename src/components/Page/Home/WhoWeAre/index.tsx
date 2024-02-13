@@ -21,7 +21,7 @@ const WhoWeAre: FC = () => {
             <label className="font-roboto text-xl font-medium text-blue_dianne">
               Start with Our Company First
             </label>
-            <label className="font-['Open Sans'] text-lg font-normal text-black_coral_pearl">
+            <label className="font-sans text-lg font-normal text-black_coral_pearl">
               Sed ut perspiciatis unde omnis iste natus error sit voluptat
               accusantium doloremque laudantium. Sed ut perspiciatis.
             </label>
@@ -30,7 +30,7 @@ const WhoWeAre: FC = () => {
             <label className="font-roboto text-xl font-medium text-blue_dianne">
               Learn How to Grow Yourself
             </label>
-            <label className="font-['Open Sans'] text-lg font-normal text-black_coral_pearl">
+            <label className="font-sans text-lg font-normal text-black_coral_pearl">
               Sed ut perspiciatis unde omnis iste natus error sit voluptat
               accusantium doloremque laudantium. Sed ut perspiciatis.
             </label>
@@ -39,7 +39,7 @@ const WhoWeAre: FC = () => {
             <label className="font-roboto text-xl font-medium text-blue_dianne">
               Farming Strategies of Today
             </label>
-            <label className="font-['Open Sans'] text-lg font-normal text-black_coral_pearl">
+            <label className="font-sans text-lg font-normal text-black_coral_pearl">
               Sed ut perspiciatis unde omnis iste natus error sit voluptat
               accusantium doloremque laudantium. Sed ut perspiciatis.
             </label>

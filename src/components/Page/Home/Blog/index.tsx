@@ -39,7 +39,7 @@ const Blog: FC = () => {
                   <label className="font-roboto text-xl font-extrabold text-blue_dianne">
                     The Benefits of Vitamin D & How to Get It
                   </label>
-                  <label className="font-['Open Sans'] text-lg font-normal text-black_coral_pearl">
+                  <label className="font-sans text-lg font-normal text-black_coral_pearl">
                     Simply dummy text of the printing and typesetting industry.
                     Lorem Ipsum
                   </label>
@@ -76,7 +76,7 @@ const Blog: FC = () => {
                   <label className="font-roboto text-xl font-extrabold text-blue_dianne">
                     The Benefits of Vitamin D & How to Get It
                   </label>
-                  <label className="font-['Open Sans'] text-lg font-normal text-black_coral_pearl">
+                  <label className="font-sans text-lg font-normal text-black_coral_pearl">
                     Simply dummy text of the printing and typesetting industry.
                     Lorem Ipsum
                   </label>

@@ -66,7 +66,7 @@ const Counter: FC = () => {
               <div className="font-roboto text-[20px] font-semibold text-blue_dianne">
                 Sara Taylor
               </div>
-              <div className="font-['Open Sans'] text-[15px] font-normal text-black_coral_pearl">
+              <div className="font-sans text-[15px] font-normal text-black_coral_pearl">
                 Consumer
               </div>
             </div>
@@ -79,7 +79,7 @@ const Counter: FC = () => {
                 <div className="font-roboto text-[30px] font-extrabold text-blue_dianne">
                   {value.unit}
                 </div>
-                <div className="font-['Open Sans'] text-base font-semibold text-blue_dianne">
+                <div className="font-sans text-base font-semibold text-blue_dianne">
                   {value.text}
                 </div>
               </div>

@@ -9,10 +9,10 @@
   height: 450px;
 }
 #image {
-  @include banner-image;
+  // @include banner-image;
   z-index: 0;
 }
 #background {
   z-index: 10;
-  @include banner-image;
+  // @include banner-image;
 }

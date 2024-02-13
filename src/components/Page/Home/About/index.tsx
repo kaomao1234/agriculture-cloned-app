@@ -15,7 +15,7 @@ const About: FC = () => {
           <br />
           Accredited Farmers
         </div>
-        <div className="font-['Open Sans'] text-lg font-normal text-black_coral_pearl">
+        <div className="font-sans text-lg font-normal text-black_coral_pearl">
           Simply dummy text of the printing and typesetting industry. Lorem had
           ceased to <br />
           been the industry&apos;s standard dummy text ever since the 1500s, when an
@@ -31,7 +31,7 @@ const About: FC = () => {
             <div className="font-roboto text-xl font-extrabold text-blue_dianne">
               Organic Foods Only
             </div>
-            <div className="font-['Open Sans'] text-base font-normal text-black_coral_pearl">
+            <div className="font-sans text-base font-normal text-black_coral_pearl">
               Simply dummy text of the printing and typesetting industry. Lorem
               Ipsum
             </div>
@@ -47,7 +47,7 @@ const About: FC = () => {
             <div className="font-roboto text-xl font-extrabold text-blue_dianne">
               Quality Standards
             </div>
-            <div className="font-['Open Sans'] text-base font-normal text-black_coral_pearl">
+            <div className="font-sans text-base font-normal text-black_coral_pearl">
               Simply dummy text of the printing and typesetting industry. Lorem
               Ipsum
             </div>
