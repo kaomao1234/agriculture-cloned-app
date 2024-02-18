@@ -23,7 +23,7 @@ const HomePage: FC = () => {
   return (
     <div id={style.main}>
       <Banner />
-      {/* <OfferBanner />
+      <OfferBanner />
       <About />
       <Shop data={chunkingProductItemCard} />
       <Counter />
@@ -31,7 +31,7 @@ const HomePage: FC = () => {
       <WhoWeAre />
       <Gallery data={viewmodel.galleryData} />
       <Blog />
-      <Newslatteer /> */}
+      <Newslatteer />
     </div>
   );
 };

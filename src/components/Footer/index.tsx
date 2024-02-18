@@ -49,7 +49,7 @@ const Footer: FC = () => {
             Organick
           </label>
         </div>
-        <label className="font-sans mt-5 text-center font-normal text-black_coral_pearl">
+        <label className="mt-5 text-center font-sans font-normal text-black_coral_pearl">
           Simply dummy text of the printing and typesetting industry. Lorem
           Ipsum simply dummy text of the printing{" "}
         </label>

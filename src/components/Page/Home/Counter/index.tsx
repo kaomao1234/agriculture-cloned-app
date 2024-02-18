@@ -66,20 +66,20 @@ const Counter: FC = () => {
               <div className="font-roboto text-[20px] font-semibold text-blue_dianne">
                 Sara Taylor
               </div>
-              <div className="font-sans text-[15px] font-normal text-black_coral_pearl">
+              <div className="font-sans text-[18px] font-normal text-black_coral_pearl">
                 Consumer
               </div>
             </div>
           </div>
         </div>
-        <div className="mt-[80px] flex flex-row justify-around">
+        <div className="mt-[3%] flex flex-row justify-around">
           {details.map((value, index) => (
             <div key={index} className="flex flex-col items-center justify-center rounded-full border-4 border-acapulco">
-              <div className="m-1 flex size-36 flex-col items-center justify-center rounded-full bg-alto p-2">
-                <div className="font-roboto text-[30px] font-extrabold text-blue_dianne">
+              <div className="m-1 flex size-28 xl:size-36 flex-col items-center justify-center rounded-full bg-alto p-2">
+                <div className="font-roboto text-[20px] xl:text-[25px] font-extrabold text-blue_dianne">
                   {value.unit}
                 </div>
-                <div className="font-sans text-base font-semibold text-blue_dianne">
+                <div className="font-sans text-base font-semibold text-blue_dianne text-center">
                   {value.text}
                 </div>
               </div>

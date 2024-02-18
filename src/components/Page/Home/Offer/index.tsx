@@ -7,7 +7,7 @@ interface Props {
 }
  const Offer: FC<Props> = (props) => {
   return (
-    <div className="flex flex-col items-start justify-center bg-blue_dianne px-[130px] py-[50px]">
+    <div className="flex flex-col items-start justify-center bg-blue_dianne xl:px-[130px] xl:py-[50px] py-[25px] px-[70px]">
       <div className="flex w-full flex-row items-end justify-between">
         <div className="felx flex-row">
           <div className="w-28 font-yellowtail text-3xl font-normal text-acapulco">

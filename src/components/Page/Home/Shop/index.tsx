@@ -20,14 +20,14 @@ const Shop: FC<Props> = ({ data }) => {
         </div>
         <div className="mt-[40px] flex w-full">
           <Carousel
-            className="w-full text-2xl pb-16 mx-20"
+            className="w-full text-2xl pb-16 xl:mx-[5%]"
             navButtonsAlwaysVisible={true}
             indicators={false}
             swipe={true}
             cycleNavigation={false}
             navButtonsProps={{
               style: {
-                backgroundColor:"black",
+                backgroundColor:"transparent",
                 backgroundClip:"text",
                 opacity:"1",
                 color:"black",
@@ -36,7 +36,7 @@ const Shop: FC<Props> = ({ data }) => {
           >
             {data.map((val, index) => (
               <div
-                className="grid w-full grid-cols-4 gap-5 px-20"
+                className="grid w-full grid-cols-4 gap-5 px-[4%]"
                 key={index}
               >
                 {val.map((val, indexImg) => (

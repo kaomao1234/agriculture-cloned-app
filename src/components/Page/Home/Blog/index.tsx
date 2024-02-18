@@ -21,9 +21,9 @@ const Blog: FC = () => {
           <CustomOutlinedButton text="More new" />
         </div>
         <div className="flex flex-row gap-x-16">
-          <div className="relative overflow-clip">
+          <div className="relative">
             <div className="absolute z-0 flex size-full flex-col px-5 pt-[23px]">
-              <label className="flex size-[80px] items-center justify-center rounded-full bg-white text-center font-roboto text-2xl font-bold text-blue_dianne">
+              <label className="flex size-[80px] items-center justify-center rounded-full bg-white text-center font-roboto text-xl font-bold text-blue_dianne xl:text-2xl">
                 25
                 <br />
                 Nov
@@ -53,14 +53,14 @@ const Blog: FC = () => {
               </div>
             </div>
             <img
-            alt=""
+              alt=""
               src="/Home/Blog/image_1.png"
               className="mb-20 w-full rounded-3xl"
             />
           </div>
-          <div className="relative overflow-clip">
+          <div className="relative">
             <div className="absolute z-0 flex size-full flex-col px-5 pt-[23px]">
-              <label className="flex size-[80px] items-center justify-center rounded-full bg-white text-center font-roboto text-2xl font-bold text-blue_dianne">
+              <label className="flex size-[80px] items-center justify-center rounded-full bg-white text-center font-roboto text-xl font-bold text-blue_dianne xl:text-2xl">
                 25
                 <br />
                 Nov
@@ -90,7 +90,7 @@ const Blog: FC = () => {
               </div>
             </div>
             <img
-            alt=""
+              alt=""
               src="/Home/Blog/image_2.png"
               className="mb-20 w-full rounded-3xl"
             />
