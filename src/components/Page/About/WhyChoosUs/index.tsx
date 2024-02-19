@@ -18,8 +18,8 @@ export const WhyChoosUs = () => {
     },
   ];
   return (
-    <div className="flex flex-col px-20 bg-stone-50 py-28">
-      <div className="flex flex-row items-stretch gap-12">
+    <div className="flex flex-col px-10 xl:px-20 bg-stone-50 py-28">
+      <div className="flex flex-row items-stretch gap-[2%]">
         <div className="flex flex-col">
           <label className="font-yellowtail text-2xl font-normal text-acapulco">
             Why Choose us?
@@ -60,15 +60,15 @@ export const WhyChoosUs = () => {
           </div>
         </div>
         <img
-          src="/About/WhyChoosUs/image_1.jpg"
-          className="w-[40%] rounded-2xl"
+          src="About/WhyChoosUs/image_1.jpg"
+          className="w-[50%] rounded-2xl"
         />
       </div>
       <div className="flex flex-row gap-x-7 my-20">
         {promote.map((val, index) => (
           <div key={index} className="flex flex-col items-center gap-y-2.5 p-5 bg-white rounded-2xl">
             <div className="bg-stone-50 p-10 rounded-2xl">
-              <img src={`/About/WhyChoosUS/${val.icon}`} className="size-11" />
+              <img src={`About/WhyChoosUs/${val.icon}`} className="size-11" />
             </div>
             <label className="font-roboto text-xl font-extrabold text-slate-700">
               {val.name}
