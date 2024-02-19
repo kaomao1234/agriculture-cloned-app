@@ -24,7 +24,7 @@ interface Props {
           circleIconColor="bg-blue_dianne"
         />
       </div>
-      <div className="mt-[25px] grid w-full grid-cols-4 gap-x-5">
+      <div className="mt-[25px] grid w-full xl:grid-cols-4 grid-cols-2 gap-4 sm:max-lg:px-[15%]">
         {props.data.map((value, index) => (
           <Fragment key={index}>
             <ProductCard {...value} key={index} />
