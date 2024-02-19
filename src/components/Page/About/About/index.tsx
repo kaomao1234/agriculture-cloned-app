@@ -3,7 +3,7 @@ import { FC } from "react";
 
 export const About: FC = () => {
   return (
-    <div className="flex flex-row gap-x-10 px-12">
+    <div className="flex flex-row gap-x-10 px-12 items-center">
       <img src="/About/About/Image.png" className="size-[40%]" alt="" />
       <div className="flex flex-col items-start">
         <label className="font-yellowtail text-2xl text-acapulco">
