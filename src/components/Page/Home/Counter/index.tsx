@@ -35,7 +35,7 @@ const Counter: FC = () => {
   };
   return (
     <div id={style.main}>
-      <div className="mb-auto flex size-full flex-col p-10">
+      <div className="mb-auto flex size-full flex-col">
         <div className="flex flex-col items-center">
           <label className="font-Yellowtail text-3xl font-normal text-acapulco">
             Testimonial
