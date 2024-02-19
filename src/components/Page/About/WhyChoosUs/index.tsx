@@ -18,7 +18,7 @@ export const WhyChoosUs = () => {
     },
   ];
   return (
-    <div className="flex flex-col px-10 xl:px-20 bg-stone-50 py-28">
+    <div className="flex flex-col bg-stone-50 px-10 py-14 xl:px-20">
       <div className="flex flex-row items-stretch gap-[2%]">
         <div className="flex flex-col">
           <label className="font-yellowtail text-2xl font-normal text-acapulco">
@@ -41,7 +41,7 @@ export const WhyChoosUs = () => {
                 100% Natural Product
               </label>
             </div>
-            <label className="font-sans pl-[10%] text-base font-normal text-gray-600">
+            <label className="pl-[10%] font-sans text-base font-normal text-gray-600">
               Simply dummy text of the printing and typesetting industry Lorem
               Ipsum
             </label>
@@ -53,7 +53,7 @@ export const WhyChoosUs = () => {
                 Increases resistance
               </label>
             </div>
-            <label className="font-sans pl-[10%] text-base font-normal text-gray-600">
+            <label className="pl-[10%] font-sans text-base font-normal text-gray-600">
               Filling, and temptingly healthy, our Biona Organic Granola with
               Wild Berries is just the thing
             </label>
@@ -61,19 +61,22 @@ export const WhyChoosUs = () => {
         </div>
         <img
           src="About/WhyChoosUs/image_1.jpg"
-          className="w-[50%] rounded-2xl"
+          className="w-[45%] rounded-2xl"
         />
       </div>
-      <div className="flex flex-row gap-x-7 my-20">
+      <div className="mt-5 flex flex-row gap-x-7">
         {promote.map((val, index) => (
-          <div key={index} className="flex flex-col items-center gap-y-2.5 p-5 bg-white rounded-2xl">
-            <div className="bg-stone-50 p-10 rounded-2xl">
+          <div
+            key={index}
+            className="flex flex-col items-center gap-y-2.5 rounded-2xl bg-white p-5"
+          >
+            <div className="rounded-2xl bg-stone-50 p-10">
               <img src={`About/WhyChoosUs/${val.icon}`} className="size-11" />
             </div>
             <label className="font-roboto text-xl font-extrabold text-slate-700">
               {val.name}
             </label>
-            <label className="font-sans text-center text-lg font-normal text-gray-600">
+            <label className="text-center font-sans text-lg font-normal text-gray-600">
               Simply dummy text of the printintypesetting industry.
             </label>
           </div>
