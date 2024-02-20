@@ -1,2 +1,2 @@
-export { HomeViewModel } from "./HomeViewmodel";
-
+export { ShopViewModel } from "./ShopViewModel";
+export { HomeViewModel } from "./HomeViewModel";
