@@ -1,7 +1,17 @@
+import { ProductCard } from "@/components";
+import { ProductCardModel } from "@/models";
 import { FC } from "react";
 
-const Shop:FC = ()=>{
-    return <div></div>
-}
+const Shop: FC<{
+  productData: ProductCardModel[];
+}> = (props) => {
+  return (
+    <div className="grid grid-cols-4 gap-3 px-[5%] py-[3%] xl:gap-5 xl:px-[10%]">
+      {props.productData.map((val, index) => {
+        return <ProductCard key={index} {...val} />;
+      })}
+    </div>
+  );
+};
 
-export {Shop};
+export { Shop };
