@@ -1,24 +1,26 @@
+import { EmployeeCard } from "@/components";
 import style from "./main.module.scss";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+import { EmployeeCardModel } from "@/models";
 export const Team = () => {
-  const employees = [
+  const employees: EmployeeCardModel[] = [
     {
       name: "Giovani Bacardo",
       role: "farmer",
       links: ["facebook", "twitter"],
-      image: "person_1.jpg",
+      image: "About/Team/person_1.jpg",
     },
     {
       name: "Marianne Loreno",
       role: "designer",
       links: ["ig", "facebook", "twitter"],
-      image: "person_2.jpg",
+      image: "About/Team/person_2.jpg",
     },
     {
       name: "Riga Pelore",
       role: "farmer",
       links: ["ig", "facebook", "twitter"],
-      image: "person_3.jpg",
+      image: "About/Team/person_3.jpg",
     },
   ];
   return (
@@ -40,50 +42,7 @@ export const Team = () => {
       </div>
       <div className="flex w-[85%] flex-row gap-10">
         {employees.map((val, index) => {
-          return (
-            <div
-              key={index}
-              className="flex flex-col overflow-clip rounded-3xl bg-stone-50 shadow duration-150 ease-out hover:bg-white hover:shadow-2xl"
-            >
-              <img src={`About/Team/${val.image}`}></img>
-              <div className="flex flex-col p-3">
-                <label className="font-roboto text-xl font-extrabold text-slate-700">
-                  {val.name}
-                </label>
-                <div className="flex flex-row items-center justify-between">
-                  <label className="font-yellowtail text-lg font-normal text-acapulco">
-                    {val.role}
-                  </label>
-                  <div className="flex flex-row gap-2">
-                    {val.links.map((val, index) => {
-                      if (val == "facebook") {
-                        return (
-                          <FaFacebook
-                            key={index}
-                            className="size-6 text-slate-700"
-                          />
-                        );
-                      } else if (val == "twitter") {
-                        return (
-                          <FaTwitter
-                            key={index}
-                            className="size-6 text-slate-700"
-                          />
-                        );
-                      } else if (val == "ig") {
-                        return (
-                          <FaInstagram
-                            key={index}
-                            className="size-6 text-slate-700"
-                          />
-                        );
-                      }
-                    })}
-                  </div>
-                </div>
-              </div>
-            </div>
-          );
+          return <EmployeeCard key={index} {...val} />;
         })}
       </div>
     </div>
