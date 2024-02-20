@@ -1,3 +1,5 @@
+export { BlogPostCard } from "./BlogPostCard";
+export { EmployeeCard } from "./EmployeeCard";
 export { Banner } from "./Banner";
 export { CustomOutlinedButton } from "./CustomOutlinedButton";
 export { Newslatteer } from "./Newslatteer";
