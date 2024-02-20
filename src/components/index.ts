@@ -1,3 +1,4 @@
+export { Banner } from "./Banner";
 export { CustomOutlinedButton } from "./CustomOutlinedButton";
 export { Newslatteer } from "./Newslatteer";
 export { CustomContainedButton } from "./CustomContainedButton";

@@ -1,17 +1,16 @@
 import { FC } from "react";
 import style from "./main.module.scss";
 import {
-  Banner,
   Team,
   WhyChoosUs,
   About,
   OfferProduct,
-} from "@/components/Page/About";
-import { Newslatteer } from "@/components";
+} from "@/templates/About";
+import { Banner, Newslatteer } from "@/components";
 const AboutPage: FC = () => {
   return (
-    <div className="flex flex-col min-h-screen h-full bg-white" id={style.main}>
-      <Banner />
+    <div className="flex h-full min-h-screen flex-col bg-white" id={style.main}>
+      <Banner label="about"image="About/Banner/Banner.png"/>
       <About />
       <WhyChoosUs />
       <Team />

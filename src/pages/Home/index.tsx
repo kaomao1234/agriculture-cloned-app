@@ -13,13 +13,16 @@ import {
   WhoWeAre,
   Gallery,
   Blog,
-} from "@/components/Page/Home";
+} from "@/templates/Home";
 import { HomeViewModel } from "@/viewmodels";
 import { Newslatteer } from "@/components";
 const HomePage: FC = () => {
   const viewmodelRef = useRef(new HomeViewModel());
   const viewmodel = viewmodelRef.current;
-  const chunkingProductItemCard = viewmodel.chunkArray(viewmodel.productItemCard,4)
+  const chunkingProductItemCard = viewmodel.chunkArray(
+    viewmodel.productItemCard,
+    4,
+  );
   return (
     <div id={style.main}>
       <Banner />
