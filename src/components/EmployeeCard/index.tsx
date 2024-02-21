@@ -10,7 +10,7 @@ const socialIcons:Record<string,any> = {
 
 const EmployeeCard: React.FC<EmployeeCardModel> = (props) => {
   return (
-    <div className="flex flex-col overflow-clip rounded-3xl bg-stone-50 shadow duration-150 ease-out hover:bg-white hover:shadow-2xl">
+    <div className="flex flex-col overflow-clip rounded-3xl bg-alabaster shadow duration-150 ease-out hover:bg-white hover:shadow-2xl">
       <img src={props.image} alt={props.name} />
       <div className="flex flex-col p-3">
         <label className="font-roboto text-xl font-extrabold text-slate-700">
