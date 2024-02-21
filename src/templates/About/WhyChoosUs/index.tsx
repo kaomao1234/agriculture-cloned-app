@@ -18,7 +18,7 @@ export const WhyChoosUs = () => {
     },
   ];
   return (
-    <div className="flex flex-col bg-stone-50 px-10 py-14 xl:px-20">
+    <div className="flex flex-col bg-alabaster px-10 py-14 xl:px-20">
       <div className="flex flex-row items-stretch gap-[2%]">
         <div className="flex flex-col">
           <label className="font-yellowtail text-2xl font-normal text-acapulco">
@@ -64,13 +64,13 @@ export const WhyChoosUs = () => {
           className="w-[45%] rounded-2xl"
         />
       </div>
-      <div className="mt-5 flex flex-row gap-x-7">
+      <div className="mt-5 flex flex-row gap-x-7 px-[5%]">
         {promote.map((val, index) => (
           <div
             key={index}
             className="flex flex-col items-center gap-y-2.5 rounded-2xl bg-white p-5"
           >
-            <div className="rounded-2xl bg-stone-50 p-10">
+            <div className="rounded-2xl bg-alabaster p-10">
               <img src={`About/WhyChoosUs/${val.icon}`} className="size-11" />
             </div>
             <label className="font-roboto text-xl font-extrabold text-slate-700">
