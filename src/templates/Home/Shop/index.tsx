@@ -45,15 +45,6 @@ const Shop: FC<Props> = ({ data }) => {
               </div>
             ))}
           </Carousel>
-          {/* {productItem.map((val, index) => {
-            return (
-              <ProductCard
-                {...val}
-                imageSrc={`/Home/Shop/image_${index + 1}.png`}
-                key={index}
-              />
-            );
-          })} */}
         </div>
         <CustomContainedButton
           text="Loading More"
