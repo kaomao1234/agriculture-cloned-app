@@ -1,0 +1,2 @@
+export { ServiceSingle } from "./ServiceSingle";
+
