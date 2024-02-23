@@ -115,10 +115,6 @@ export class HomeViewModel {
             imageSrc: "/Home/Gallery/image_3.jpg"
         }
     ]
-
-    constructor() {
-
-    }
     chunkArray(array: any[], size: number): any[][] {
         const chunkedArr = [];
         let index = 0;
