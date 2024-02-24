@@ -1,4 +1,7 @@
+import { NextRouter } from "next/router";
+
 export class PortfolioViewModel {
+    router: NextRouter;
     portFolioItemData = [
         {
             label: "Green & TastyLemon",
@@ -30,6 +33,8 @@ export class PortfolioViewModel {
             type: "Farmer",
             image: "Portfolio/Portfolio/image_6.png",
         },
-
     ]
+    constructor(router: NextRouter) {
+        this.router = router;
+    }
 }
