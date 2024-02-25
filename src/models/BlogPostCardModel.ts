@@ -4,5 +4,6 @@ interface BlogPostCardModel{
     author: string;
     title: string;
     content: string;
+    onTap?:()=>void;
 };
 export type {BlogPostCardModel};
