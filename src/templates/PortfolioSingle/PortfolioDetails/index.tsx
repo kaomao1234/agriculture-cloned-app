@@ -2,7 +2,7 @@ import { FC } from "react";
 
 const PortfolioDetails: FC = () => {
   return (
-    <div className="mt-[15%] flex flex-col gap-10 px-[16%]">
+    <div className="mt-[23%] xl:mt-[15%] flex flex-col gap-10 px-[16%]">
       <div className="flex flex-col items-start justify-start gap-3">
         <label className="font-roboto text-2xl font-extrabold text-blue_dianne">
           About The Farm:
