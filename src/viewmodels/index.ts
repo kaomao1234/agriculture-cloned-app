@@ -1,3 +1,5 @@
+export { BlogViewModel } from "./BlogViewModel";
+export { TeamViewModel } from "./TeamViewModel";
 export { PortfolioViewModel } from "./PortfolioViewModel";
 export { ServiceViewModel } from "./SeviceViewModel";
 export { ShopSingleViewModel } from "./ShopSingleViewModel";
