@@ -1,5 +1,4 @@
 import { BlogPostCardModel } from "@/models";
-import image from "next/image";
 import { title } from "process";
 import { FC } from "react";
 import { CustomContainedButton } from "../CustomContainedButton";
