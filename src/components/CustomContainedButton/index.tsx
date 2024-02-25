@@ -13,7 +13,7 @@ export const CustomContainedButton: FC<Props> = (props) => {
     <Button
       onClick={props.onClick}
       variant="contained"
-      className={`flex w-fit flex-row gap-x-2.5 rounded-2xl ${props.backgroundColor} px-7 py-5 hover:${props.backgroundColor}`}
+      className={`flex w-fit flex-row gap-x-2.5 rounded-2xl ${props.backgroundColor} px-7 py-4 hover:${props.backgroundColor}`}
     >
       <label
         className={`${props.textColor} font-roboto text-base font-bold capitalize`}
