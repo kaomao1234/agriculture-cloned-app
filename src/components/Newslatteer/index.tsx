@@ -3,7 +3,7 @@ import { FC } from "react";
 import Image from "next/image";
 export const Newslatteer: FC = () => {
   return (
-    <div className="relative mx-[130px] mb-[60px] mt-[90px] overflow-clip rounded-3xl">
+    <div className="relative mx-[15%] my-[5%] overflow-clip rounded-3xl ">
       <div className="absolute z-0 flex size-full items-center justify-center">
         <div className="flex w-full flex-row justify-between px-6">
           <div className="font-roboto text-3xl font-extrabold text-white">
@@ -27,7 +27,7 @@ export const Newslatteer: FC = () => {
           </div>
         </div>
       </div>
-      <img alt="" src="/Newslatteer/Photo.jpg" />
+      <img alt="" src="/Newslatteer/Photo.jpg"className="" />
     </div>
   );
 };
