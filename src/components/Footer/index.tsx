@@ -58,7 +58,7 @@ const Footer: FC = () => {
             <Fragment key={index}>
               <IconButton
                 key={index}
-                className="bg-[#EFF6F1] p-6 text-[30px] text-blue_dianne"
+                className="bg-[#EFF6F1] p-5 text-[25px] text-blue_dianne"
               >
                 {value(index)}
               </IconButton>

@@ -4,7 +4,7 @@ import Image from "next/image";
 export const Newslatteer: FC = () => {
   return (
     <div className="flex items-center justify-center">
-      <div className="relative mx-[15%] my-[5%] w-[60%] overflow-clip rounded-3xl">
+      <div className="relative mx-[15%] my-[5%] w-[75%] overflow-clip rounded-3xl">
         <div className="absolute z-0 flex size-full items-center justify-center">
           <div className="flex w-full flex-row justify-between items-center px-6">
             <div className="font-roboto text-2xl font-extrabold text-white">
