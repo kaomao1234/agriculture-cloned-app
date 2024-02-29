@@ -7,9 +7,11 @@ import {
 import { FC, useRef } from "react";
 import style from "./ShopSingle.module.scss";
 import { ShopSingleViewModel } from "@/viewmodels";
+import { useRouter } from "next/router";
 
 const ShopSinglePage: FC = () => {
-  const viewModelRef = useRef(new ShopSingleViewModel());
+  const router = useRouter();
+  const viewModelRef = useRef(new ShopSingleViewModel(router));
   const viewModel = viewModelRef.current;
   return (
     <div
