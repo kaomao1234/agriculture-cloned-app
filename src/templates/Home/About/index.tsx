@@ -2,7 +2,10 @@ import { FC } from "react";
 import style from "./main.module.scss";
 import { CustomContainedButton } from "@/components";
 import Image  from "next/image";
-const About: FC = () => {
+import { useRouter } from "next/router";
+const About: FC<{
+  onShopClick:()=>void
+}> = (props) => {
   return (
     <div id={style.main} className="bg-alabaster">
       <img alt="" src="/Home/About/image.png" className="size-[30%]"/>
@@ -58,6 +61,7 @@ const About: FC = () => {
           textColor=""
           circleIconColor="bg-slate_600"
           backgroundColor="bg-blue_dianne"
+          onClick={props.onShopClick}
         />
       </div>
     </div>

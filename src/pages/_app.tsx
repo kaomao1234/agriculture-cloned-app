@@ -6,7 +6,7 @@ import CircularProgress from "@mui/material/CircularProgress";
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <div className="flex h-full min-h-screen w-full flex-col">
-      <div className="flex flex-row gap-3 fixed z-30 bg-sunset_pearl w-full">
+      {/* <div className="fixed z-30 flex w-full flex-row gap-3 bg-sunset_pearl">
         <label className="hidden text-xl sm:visible sm:flex sm:md:hidden">
           Sm breakpoint-up
         </label>
@@ -22,11 +22,13 @@ export default function App({ Component, pageProps }: AppProps) {
         <label className="hidden text-xl 2xl:visible 2xl:flex">
           2Xl breakpoint-up
         </label>
-      </div>
-      <div className="flex flex-col">
+      </div> */}
+      <div className="relative flex flex-col">
         <Nav />
-        <Component {...pageProps} />
-        <Footer />
+        <div className="flex flex-col z-0 pt-[100px]">
+          <Component {...pageProps} />
+          <Footer />
+        </div>
       </div>
     </div>
   );

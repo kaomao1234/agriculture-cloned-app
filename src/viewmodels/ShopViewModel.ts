@@ -1,6 +1,7 @@
 import { ProductCardModel } from "@/models";
-
+import { NextRouter, useRouter } from "next/router";
 export class ShopViewModel {
+    router: NextRouter;
     productItemCard: ProductCardModel[] = [
         {
             "imageSrc": "Shop/Shop/image_1.png",
@@ -99,4 +100,13 @@ export class ShopViewModel {
         }
 
     ];
+    constructor(router: NextRouter) {
+        this.router = router;
+
+    }
+    onItemTrigger(self: ProductCardModel) {
+        this.router.push({
+            pathname: "/ShopSingle"
+        })
+    }
 }

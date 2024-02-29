@@ -46,4 +46,9 @@ export class BlogViewModel {
     constructor(router: NextRouter) {
         this.router = router;
     }
+    onItemTrigger(self:BlogPostCardModel){
+        this.router.push({
+            pathname:"/BlogSingle"
+        })
+    }
 };

@@ -4,12 +4,16 @@ import { ProductCardModel } from "@/models";
 import { Button } from "@mui/material";
 import { FaStar } from "react-icons/fa6";
 import Image from "next/image";
-const ProductCard: FC<ProductCardModel> = (props) => {
+interface Props extends ProductCardModel{
+  onTap?:()=>void;
+}
+const ProductCard: FC<Props> = (props) => {
   const image  = props.imageSrc == undefined ? "" : props.imageSrc;
   return (
     <Button
       variant="contained"
       className="flex flex-col items-center overflow-clip rounded-[30px] bg-alabaster p-0 pt-[15px] hover:bg-alabaster"
+      onClick={props.onTap}
     >
       <div className="flex size-fit w-full items-start">
         <label className="font-sans ml-[15px] rounded-lg bg-blue_dianne px-3 py-1.5 text-sm font-semibold capitalize text-white">

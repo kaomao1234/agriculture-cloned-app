@@ -37,4 +37,13 @@ export class PortfolioViewModel {
     constructor(router: NextRouter) {
         this.router = router;
     }
+    onItemTrigger(self: {
+        label: string,
+        type: string,
+        image: string
+    }) {
+        this.router.push({
+            pathname: "/PortfolioSingle"
+        })
+    }
 }

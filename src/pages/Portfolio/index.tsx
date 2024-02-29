@@ -4,21 +4,20 @@ import { PortfolioViewModel } from "@/viewmodels";
 import { useRouter } from "next/router";
 import { FC, useRef } from "react";
 
-let a = 0;
-const recur = () => {
-  console.log(a);
-  a += 1;
-  return <div className="bg-sunset_pearl">{a < 41674 ? recur() : null}</div>;
-};
-
 const PortfolioPage: FC = () => {
   const router = useRouter();
   const viewModelRef = useRef(new PortfolioViewModel(router));
   const viewModel = viewModelRef.current;
+  const onItemTap = (self: { label: string; type: string; image: string }) => {
+    viewModel.onItemTrigger(self);
+  };
   return (
     <div className="flex min-h-screen flex-col bg-white">
       <Banner image="Portfolio/Banner/image.png" label="portfolio standard" />
-      <Portfolio portFolioItemData={viewModel.portFolioItemData} />
+      <Portfolio
+        portFolioItemData={viewModel.portFolioItemData}
+        onItemTap={onItemTap}
+      />
       <Newslatteer />
     </div>
   );

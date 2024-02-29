@@ -4,7 +4,6 @@ import { Avatar, useTheme } from "@mui/material";
 import { FaStar } from "react-icons/fa";
 import Image from "next/image";
 const Counter: FC = () => {
-  const [activeStep, setActiveStep] = useState(0);
   const details: Record<string, string>[] = [
     {
       unit: "100%",
@@ -23,16 +22,6 @@ const Counter: FC = () => {
       text: "Year of farm",
     },
   ];
-  const theme = useTheme();
-  const handleNext = () => {
-    setActiveStep((prev) => prev + 1);
-  };
-  const handleBack = () => {
-    setActiveStep((prev) => prev - 1);
-  };
-  const handleChange = (step: number) => {
-    setActiveStep(step);
-  };
   return (
     <div id={style.main}>
       <div className="mb-auto flex size-full flex-col">

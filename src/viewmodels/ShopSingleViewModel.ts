@@ -1,6 +1,8 @@
 import { ProductCardModel } from "@/models";
+import { NextRouter } from "next/router";
 
 export class ShopSingleViewModel {
+    router: NextRouter;
     productItemCard: ProductCardModel[] = [
         {
             "imageSrc": "ShopSingle/RelatedProduct/image_1.png",
@@ -35,4 +37,12 @@ export class ShopSingleViewModel {
             "categoryTag": "Vegetable"
         },
     ]
+    constructor(router: NextRouter) {
+        this.router = router;
+    }
+    onItemTrigger() {
+        this.router.push({
+            pathname: "/ShopSingle"
+        })
+    }
 };

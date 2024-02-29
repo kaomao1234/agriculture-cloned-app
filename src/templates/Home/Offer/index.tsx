@@ -4,6 +4,8 @@ import { CustomContainedButton, ProductCard } from "@/components";
 import { ProductCardModel } from "@/models";
 interface Props {
   data: ProductCardModel[];
+  onProductCardClick: () => void;
+  onViewAllProductClick: () => void;
 }
 const Offer: FC<Props> = (props) => {
   return (
@@ -22,12 +24,17 @@ const Offer: FC<Props> = (props) => {
           textColor="text-blue_dianne"
           backgroundColor="bg-sunset_pearl"
           circleIconColor="bg-blue_dianne"
+          onClick={props.onViewAllProductClick}
         />
       </div>
       <div className="mt-[25px] grid w-full grid-cols-2 gap-4 px-[15%] xl:grid-cols-4 xl:px-0">
         {props.data.map((value, index) => (
           <Fragment key={index}>
-            <ProductCard {...value} key={index} />
+            <ProductCard
+              {...value}
+              key={index}
+              onTap={props.onProductCardClick}
+            />
           </Fragment>
         ))}
       </div>

@@ -10,6 +10,7 @@ interface serviceData {
 const Service: FC<{
   serviceLeftData: serviceData[];
   serviceRightData: serviceData[];
+  onTap:()=>void
 }> = (props) => {
   return (
     <div className="flex w-full flex-col items-center bg-alabaster gap-y-5 py-10">
@@ -63,7 +64,7 @@ const Service: FC<{
           })}
         </div>
       </div>
-      <CustomOutlinedButton text="Explore More" />
+      <CustomOutlinedButton text="Explore More" onClick={props.onTap} />
     </div>
   );
 };
